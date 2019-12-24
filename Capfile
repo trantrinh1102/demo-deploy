@@ -26,15 +26,32 @@ require "capistrano/deploy"
 # require "capistrano/scm/git"
 # install_plugin Capistrano::SCM::Git
 
-require 'capistrano/rails'
-require 'capistrano/bundler'
+# require 'capistrano/rails'
+# require 'capistrano/bundler'
+# require 'capistrano/rvm'
+# require 'capistrano/npm'
+# require 'capistrano/puma'
+# require 'capistrano/puma/nginx'
+# require 'capistrano/upload-config'
+# require 'sshkit/sudo'
+
+require "capistrano/scm/git"
+install_plugin Capistrano::SCM::Git
+
+require 'capistrano/setup'
+require 'capistrano/deploy'
+# require 'capistrano/scm/git'
+# install_plugin Capistrano::SCM::Git
 require 'capistrano/rvm'
-require 'capistrano/npm'
-require 'capistrano/nvm'
+require 'capistrano/rails'
 require 'capistrano/puma'
-require 'capistrano/puma/nginx'
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Nginx
+install_plugin Capistrano::Puma::Jungle
+require 'capistrano/nginx'
 require 'capistrano/upload-config'
 require 'sshkit/sudo'
+
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
