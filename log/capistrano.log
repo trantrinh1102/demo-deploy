@@ -38,3 +38,56 @@
   INFO ---------------------------------------------------------------------------
   INFO START 2019-12-24 13:05:51 +0700 cap production config:init
   INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-24 13:14:27 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-24 13:24:18 +0700 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [833b990c] Running [ -d ~/.rvm ] as deployer@<<YOUR SERVER>>
+ DEBUG [833b990c] Command: [ -d ~/.rvm ]
+ DEBUG [2a12471e] Running [ -d ~/.rvm ] on 192.168.1.52
+ DEBUG [2a12471e] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-24 13:24:39 +0700 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [adaf178b] Running [ -d ~/.rvm ] as deployer@192.168.1.52
+ DEBUG [adaf178b] Command: [ -d ~/.rvm ]
+ DEBUG [adaf178b] Finished in 2.240 seconds with exit status 1 (failed).
+ DEBUG [081484a7] Running [ -d /usr/local/rvm ] as deployer@192.168.1.52
+ DEBUG [081484a7] Command: [ -d /usr/local/rvm ]
+ DEBUG [081484a7] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [1aebfcfe] Running ~/.rvm/bin/rvm version as deployer@192.168.1.52
+ DEBUG [1aebfcfe] Command: ~/.rvm/bin/rvm version
+ DEBUG [1aebfcfe] 	bash: /home/deployer/.rvm/bin/rvm: No such file or directory
+ DEBUG [1aebfcfe] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-24 13:25:22 +0700 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3c843fd1] Running [ -d ~/.rvm ] as ubuntu@192.168.1.52
+ DEBUG [3c843fd1] Command: [ -d ~/.rvm ]
+ DEBUG [3c843fd1] Finished in 1.006 seconds with exit status 0 (successful).
+ DEBUG [8640ffde] Running ~/.rvm/bin/rvm version as ubuntu@192.168.1.52
+ DEBUG [8640ffde] Command: ~/.rvm/bin/rvm version
+ DEBUG [8640ffde] 	rvm 1.29.9 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [8640ffde] 	
+ DEBUG [8640ffde] Finished in 0.203 seconds with exit status 0 (successful).
+ DEBUG [8da4cfc5] Running ~/.rvm/bin/rvm current as ubuntu@192.168.1.52
+ DEBUG [8da4cfc5] Command: ~/.rvm/bin/rvm current
+ DEBUG [8da4cfc5] 	ruby-2.4.1
+ DEBUG [8da4cfc5] 	
+ DEBUG [8da4cfc5] Finished in 0.204 seconds with exit status 0 (successful).
+ DEBUG [3224c834] Running ~/.rvm/bin/rvm default do ruby --version as ubuntu@192.168.1.52
+ DEBUG [3224c834] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [3224c834] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [3224c834] 	
+ DEBUG [3224c834] Finished in 0.247 seconds with exit status 0 (successful).
+  INFO [fac46c58] Running /usr/bin/env mkdir -p /tmp/demo-deploy/ as ubuntu@192.168.1.52
+ DEBUG [fac46c58] Command: /usr/bin/env mkdir -p /tmp/demo-deploy/
+  INFO [fac46c58] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/demo-deploy/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/demo-deploy/nvm-exec.sh 100.0%
+  INFO [a878ec67] Running /usr/bin/env chmod +x /tmp/demo-deploy/nvm-exec.sh as ubuntu@192.168.1.52
+ DEBUG [a878ec67] Command: /usr/bin/env chmod +x /tmp/demo-deploy/nvm-exec.sh
+  INFO [a878ec67] Finished in 0.059 seconds with exit status 0 (successful).
+ ERROR nvm: nvm_node is not set

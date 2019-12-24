@@ -23,8 +23,8 @@ require "capistrano/deploy"
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
-require "capistrano/scm/git"
-install_plugin Capistrano::SCM::Git
+# require "capistrano/scm/git"
+# install_plugin Capistrano::SCM::Git
 
 require 'capistrano/rails'
 require 'capistrano/bundler'
@@ -33,6 +33,8 @@ require 'capistrano/npm'
 require 'capistrano/nvm'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
+require 'capistrano/upload-config'
+require 'sshkit/sudo'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }

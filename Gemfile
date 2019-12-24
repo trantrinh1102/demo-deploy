@@ -35,6 +35,8 @@ group :development do
   gem 'capistrano-npm', require: false
   gem 'capistrano-nvm', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-upload-config'
+  gem 'sshkit-sudo'
 end
 
 # learn-rails
