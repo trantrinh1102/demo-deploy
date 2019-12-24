@@ -1,0 +1,10 @@
+Started GET "/" for 127.0.0.1 at 2019-12-24 11:38:06 +0700
+Processing by VisitorsController#new as HTML
+  Rendering visitors/new.html.erb within layouts/application
+  Rendered visitors/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 2129ms (Views: 2007.8ms)
+
+
